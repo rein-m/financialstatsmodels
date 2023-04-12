@@ -6,4 +6,4 @@ VaR stands for Value at Risk, and it is a measure of the maximum potential loss 
 
 BARCH stands for Bayesian Autoregressive Conditional Heteroskedasticity, and it is a statistical model used to estimate the volatility of financial returns over time, which can be used to assess risk and inform investment decisions
 
-RSI is a Relative Strength Index, better explained in the file description
+RSI is a Relative Strength Index
