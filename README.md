@@ -11,4 +11,3 @@ GARCH stands for Generalized Autoregressive Conditional Heteroskedasticity, comp
 RSI is a Relative Strength Index, which are used to show strength of a (mostly US) traded equity, ETF, or future relative to past performance. 
 "The relative strength index (RSI) is a technical indicator used in stock trading analysis to measure the strength of a stock's price action by comparing the magnitude of recent gains to recent losses in an attempt to determine overbought and oversold conditions of an asset.
 The RSI is calculated using a formula that takes into account the average gain and average loss over a specified time period. The resulting value ranges from 0 to 100, with a value of 70 or above indicating an overbought condition and a value of 30 or below indicating an oversold condition."
-
