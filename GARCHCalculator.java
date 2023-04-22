@@ -4,20 +4,19 @@ public class GARCHCalculator {
     
     public static double calculateGARCH(ArrayList<Double> prices, int p, int q) {
         
-        // Initialize the model parameters
+      
         double alpha0 = 0.01; // Constant term
         double[] alpha = new double[p]; // ARCH coefficients
         double[] beta = new double[q]; // GARCH coefficients
         double sigma2 = 0.0; // Conditional variance
         
-        // Compute the squared returns and initialize the array
         ArrayList<Double> squaredReturns = new ArrayList<Double>();
         for (int i = 1; i < prices.size(); i++) {
             double r = Math.log(prices.get(i) / prices.get(i - 1)); // Log returns
             squaredReturns.add(r * r); // Squared returns
         }
         
-        // Estimate the model parameters
+        // estimate the model parameters
         for (int t = p; t < squaredReturns.size(); t++) {
             double sum1 = alpha0;
             double sum2 = 0.0;
@@ -28,7 +27,7 @@ public class GARCHCalculator {
                 sum2 += beta[j - 1] * sigma2 * squaredReturns.get(t - j);
             }
             sigma2 = sum1 + sum2;
-            alpha0 = 0.01; // Reset alpha0 for next iteration
+            alpha0 = 0.01; // reset alpha0 for next iteration
         }
         
         return Math.sqrt(sigma2);
