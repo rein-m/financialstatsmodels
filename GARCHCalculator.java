@@ -34,7 +34,7 @@ public class GARCHCalculator {
     }
     
     public static void main(String[] args) {
-        // Example usage
+        // example usage
         ArrayList<Double> prices = new ArrayList<Double>();
         prices.add(100.0);
         prices.add(110.0);
