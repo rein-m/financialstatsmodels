@@ -14,3 +14,5 @@ The RSI is calculated using a formula that takes into account the average gain a
 
 The Black-Scholes model is a mathematical formula used to estimate the price of a European call or put option on a stock or other financial asset. It was developed by Fischer Black and Myron Scholes in 1973 and has become a widely used tool in finance and investment management.
 The model makes several simplifying assumptions, including that the stock price follows a lognormal distribution, the risk-free interest rate is constant, and there are no transaction costs or taxes. Under these assumptions, the model calculates the theoretical value of an option by taking into account the stock price, strike price, time to expiration, risk-free interest rate, and volatility of the underlying stock.
+
+^This Black-Scholes model is a somewhat innacurate first pass. Due to some mathematical complexities it won't be as accurate as other calculators you might find. It is, however, still useful for visualizing the calculation and isn't innacurate to the point of worthlessness.
