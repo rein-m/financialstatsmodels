@@ -26,21 +26,21 @@ public class RsiCalculator {
 
         double[] rs = new double[prices.length];
         double[] rsi = new double[prices.length];
-        rs[n] = up/down;
+        rs[n] = up / down;
         rsi[n] = 100.0 - 100.0 / (1.0 + rs[n]);
 
         for (int i = n+1; i < prices.length; i++) {
             double delta = deltas[i-1];
 
             if (delta >= 0) {
-                up = (up*(n-1) + delta)/n;
-                down = (down*(n-1))/n;
+                up = (up * (n-1) + delta) / n;
+                down = (down * (n-1)) / n;
             } else {
-                down = (down*(n-1) + Math.abs(delta))/n;
-                up = (up*(n-1))/n;
+                down = (down * (n-1) + Math.abs(delta)) / n;
+                up = (up * (n-1)) / n;
             }
 
-            rs[i] = up/down;
+            rs[i] = up / down;
             rsi[i] = 100.0 - 100.0 / (1.0 + rs[i]);
         }
 
