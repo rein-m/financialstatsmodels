@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 public class BlackScholes {
     //please note that:
-    //the CDF and ERF methods are used to calculate the cumulative distribution function and error function, respectively, which are required for the Black-Scholes calculation. 
-    //These methods are implemented using an approximation formula, and may not be perfect. 
+    //the CDF and ERF methods are used to calculate the cumulative distribution function and error function, respectively, which are required for the Black-Scholes calculation
+    //these methods are implemented using an approximation formula sourced from: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4487559
+    //please never use this calculator to make financial or market decisions, as this is a hobbyist project. 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
