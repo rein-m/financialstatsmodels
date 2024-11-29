@@ -15,3 +15,6 @@ The model makes several simplifying assumptions, including that the stock price 
 ^This Black-Scholes model is a somewhat innacurate first pass, as I didn't calculate the error function exactly; I used approximation weights to get 'close' to accurate.
 
 (what is close, really? probably more stringent if you work at a trading firm :) )
+
+
+RSJ is an interesting metric, varying from -1 - 1, and it's intention is to show the strength of volatility dominating a stock over a timeframe, and whether that volatility is positive or negative.
